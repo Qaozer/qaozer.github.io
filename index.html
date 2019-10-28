@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8" />
+        <title>Webagency</title>
+        <meta description="WebAgency, l'agence de tous vos projets! Vous avez un projet web? On vous aide à le réaliser">
+        <script src="https://kit.fontawesome.com/50ca396107.js" crossorigin="anonymous"></script>
+        <link rel="shortcut icon" href="res/img/ico/favicon.ico">
+        <link rel="stylesheet" type="text/css" href="css/fonts/fonts.css">
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+
+    <body>
+        <!-- Navbar-->
+        <header>
+            <figure>
+                <img src="res/img/logo.png" alt="Webagency logo" title="Webagency">
+            </figure>
+            <nav>
+                <ul>
+                    <li><a class="active" href="#top">Accueil</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main id="top">
+        <!-- Slider -->
+            <div class="slider">
+                <figure>
+                    <div class="overlay"></div>
+                    <img src="res/img/slider/bg1.jpg" alt="Jeune fille souriante, les mains couvertes de peinture" title="Slider">
+                    <figcaption class="slider_text">
+                        <h1><span>Webagency</span> : L'Agence de tous vos projets !</h1><p>Vous avez un projet web ? La WebAgency vous aide à le réaliser !</p>
+                        <a href="#services">Plus d'infos</a>
+                    </figcaption>
+                </figure>
+                <a class="prev"><i class="fas fa-angle-left"></i></a>
+                <a class="next"><i class="fas fa-angle-right"></i></a>
+            </div>
+        
+        <!-- Nos services -->
+            <section id="services">
+                <div class="intro">
+                    <h2>NOS SERVICES</h2>
+                    <div class="separator"><i class="fas fa-circle"></i></div>
+                    <p>
+                    Quelque soit votre projet, nous vous aidons à le mettre en avant grâce à notre expertise en webdesign.
+                    </p>
+                </div>
+                <div class="container">
+                    <figure class="col_prin">
+                        <img src="res/img/main-feature.png" alt="Ecran d'ordinateur affichant des images de projets" title="Nos services">
+                    </figure>
+                    <div class="col_sec">
+                        <div class="feature_paragraph">
+                            <i class="fas fa-chart-line deco"></i>
+                            <i class="fas fa-circle"></i>
+                            <div>
+                                <h3>UX design</h3>
+                                <p>
+                                    Avec Webagency, assurez-vous que l'expérience utilisateur de vos visiteurs soit irréprochable.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="feature_paragraph">
+                            <i class="fas fa-cubes deco"></i>
+                            <i class="fas fa-circle"></i>
+                            <div>
+                                <h3>UI design</h3>
+                                <p>
+                                    Offrez à votre site une interface utilisateur agréable et en harmonie avec son contenu.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="feature_paragraph">
+                            <i class="fas fa-chart-pie deco"></i>
+                            <i class="fas fa-circle"></i>
+                            <div>
+                                <h3>SEO</h3>
+                                <p>
+                                    La conception de votre site est garantie telle qu'il sera aisé de le retrouver à l'aide des moteurs de recherche.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        <!-- Section portfolio-->
+            <section id="portfolio">
+                <div class="intro">
+                    <h2>NOS PROJETS</h2><div class="separator"><i class="fas fa-circle"></i></div>
+                    <p>
+                    Ils nous ont fait confiance et ne l'ont pas regretté. Découvrez un aperçu de notre travail à travers les sites conçus pour nos clients.
+                    </p>
+                </div>
+                <div class="portfolio_selector">
+                    <input type="radio" id="all_works" name="categorie" checked/><label for="all_works">All works</label>
+                    <input type="radio" id="creative" name="categorie"/><label for="creative">Creative</label>
+                    <input type="radio" id="corporate" name="categorie"/><label for="corporate">Corporate</label>
+                    <input type="radio" id="portfolioo" name="categorie"/><label for="portfolioo">Portfolio</label>
+                </div>
+                <div class="grille">
+                    <div class="grille-item" data-category="crea">
+                        <figure class="grid-item-img">
+                            <img src="res/img/portfolio/01.jpg" alt="portfolio item 1">
+                            <figcaption class="caption">
+                                <h3>Eye-cognito</h3>
+                                <p>Opticiens</p><i class="fa fa-eye" aria-hidden="true"></i>
+                        </figcaption>
+                        </figure>
+                    </div>
+                    <div class="grille-item" data-category="corpo">
+                        <figure class="grid-item-img">
+                            <img src="res/img/portfolio/02.jpg" alt="portfolio item 1">
+                            <figcaption class="caption">
+                                <h3>Lap'Artiste</h3>
+                                <p>Blog artistique</p><i class="fa fa-eye" aria-hidden="true"></i>
+                        </figcaption>
+                        </figure>
+                    </div>
+                    <div class="grille-item" data-category="portfo">
+                        <figure class="grid-item-img">
+                            <img src="res/img/portfolio/03.jpg" alt="portfolio item 1">
+                            <figcaption class="caption">
+                                <h3>Pompadour</h3>
+                                <p>Bar à cocktail</p><i class="fa fa-eye" aria-hidden="true"></i>
+                        </figcaption>
+                        </figure>
+                    </div>
+                    <div class="grille-item">
+                        <figure class="grid-item-img">
+                            <img src="res/img/portfolio/04.jpg" alt="portfolio item 1">
+                            <figcaption class="caption">
+                                <h3>Perfect Org</h3>
+                                <p>Agence événementielle</p><i class="fa fa-eye" aria-hidden="true"></i>
+                        </figcaption>
+                        </figure>
+                    </div>
+                    <div class="grille-item">
+                        <figure class="grid-item-img">
+                            <img src="res/img/portfolio/05.jpg" alt="portfolio item 1">
+                            <figcaption class="caption">
+                                <h3>Mock-up</h3>
+                                <p>Prêt-à-porter</p><i class="fa fa-eye" aria-hidden="true"></i>
+                        </figcaption> 
+                        </figure>
+                    </div>
+                    <div class="grille-item">
+                        <figure class="grid-item-img">
+                            <img src="res/img/portfolio/06.jpg" alt="portfolio item 1">
+                            <figcaption class="caption">
+                                <h3>Les Voyageurs</h3>
+                                <p>Agence de voyage</p><i class="fa fa-eye" aria-hidden="true"></i>
+                        </figcaption> 
+                        </figure>
+                    </div>
+                    <div class="grille-item">
+                        <figure class="grid-item-img">
+                            <img src="res/img/portfolio/07.jpg" alt="portfolio item 1">
+                            <figcaption class="caption">
+                                <h3>Rad Rocket</h3>
+                                <p>Club Artistique</p><i class="fa fa-eye" aria-hidden="true"></i>
+                        </figcaption>
+                        </figure>
+                    </div>
+                    <div class="grille-item">
+                        <figure class="grid-item-img">
+                            <img src="res/img/portfolio/08.jpg" alt="portfolio item 1">
+                            <figcaption class="caption">
+                                <h3>Be Theme</h3>
+                                <p>Fournitures de bureau</p><i class="fa fa-eye" aria-hidden="true"></i>
+                        </figcaption> 
+                        </figure>
+                    </div>                   
+                </div>
+            </section>
+        <!-- Section Contact-->
+            <section id="contact">
+                <div class="map_container">
+                    <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.2216096807224!2d2.347636915674888!3d48.87305177928887!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e145ccb3091%3A0x9495beee8c96ec27!2s25%20Rue%20d&#39;Hauteville%2C%2075010%20Paris!5e0!3m2!1sfr!2sfr!4v1571581590825!5m2!1sfr!2sfr" allowfullscreen=""></iframe>
+                    <div class="overlay"></div>
+                    <div class="form_container">
+                        <form>
+                            <div>
+                                <h3>Contact Info</h3>
+                                <address>
+                                    <p>WebAgency SAS</p>
+                                    <p>25 rue d'Hauteville 75010 Paris</p>
+                                    <p>Tel : 01 02 03 04 05</p>
+                                </address>
+                            </div>
+                            <input type="text" id="firstname" name="firstname" placeholder="Name">
+                            <input type="text" id="email" name="email" placeholder="Email">
+                            <input type="text" id="subject" name="subject" placeholder="Subject">
+                            <textarea id="message" name="message" placeholder="Message" rows="6"></textarea>
+                            <input type="submit" value="Send Message" class="btn">
+                        </form>
+                    </div>
+                </div>
+            </section>
+        <footer>
+            <p>&copy;2019 Web Agency</p>
+        </footer>
+        </main>
+    </body>
+</html>
