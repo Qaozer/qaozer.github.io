@@ -1,6 +1,7 @@
 body{
 	margin: 0;
 	font-family: robotoregular;
+	font-size: 70%;
 }
 
 figure {
@@ -55,35 +56,10 @@ a{
 	text-decoration: none;
 }
 
-@media (min-width: 768px){
-	header{
-		flex-flow: row;
-	}
-	header figure, header nav{
-		margin-left: 0;
-		margin-right: 0;
-	}
-	header figure{
-		margin-top: auto;
-		margin-bottom: auto;
-	}
-	header nav{
-		margin-top: 0;
-		margin-bottom: 0;
-	}
-	header nav li a {
-	    display: inline-block;
-	    padding-bottom: 2rem;
-	}
-	.active , nav a:hover{
-	border-top: 3px solid #5CADD3;
-	}
-}
-
 /* Slider */
 
 .slider{
-	padding-top: 86px;
+	padding-top: 83px;
 	display: flex;
 	align-items: center;
 	position: relative;
@@ -102,6 +78,7 @@ a{
 
 .slider figure, .slider img{
 	width:100%;
+	height: auto;
 	margin-top: 0;
 }
 
@@ -114,6 +91,10 @@ a{
 	margin-left : auto;
 	margin-right: auto;
 	text-align: center;
+}
+
+.slider_text p{
+	margin-bottom: 30px;
 }
 
 .slider_text a{
@@ -159,24 +140,6 @@ a{
 	margin-left: -0.4rem;
 }
 
-@media (min-width: 768px){
-	.slider img, .slider figure{
-		display: inherit;
-		margin-bottom: 0; 
-	}
-	.slider_text{
-		position: absolute;
-		text-align: left;
-    	top: 40%;
-    	margin-left: 0px;
-    	padding-left: 6rem;
-		color: white;
-	}
-	.prev, .next, .slider .overlay{
-		display: inherit;
-	}
-}
-
 /* Services */
 
 section{
@@ -192,7 +155,7 @@ section{
 h2 {
 	text-align: center;
 	font-family: robotobold;
-	font-size: 3rem;
+	font-size: 2rem;
 	margin-bottom: 0;
 }
 
@@ -216,7 +179,7 @@ h2 {
 }
 
 .container {
-	max-width: 1150px;
+	max-width: 90%;
 	margin: 60px auto;
 	display: flex;
 	flex-flow: column;
@@ -262,18 +225,6 @@ h2 {
     left: -0.8em;
 }
 
-@media (min-width: 768px){
-	.container{
-		flex-flow: row;
-	}
-	.col_sec{
-		width: 50%;
-	}
-	.separator{
-		width: 20%;
-	}
-}
-
 /* Portfolio */
 
 #portfolio{
@@ -305,13 +256,13 @@ input[type="radio"] {
   color:#222222;
   padding:3%;
   margin-bottom:30px;
-  margin-right: -4px;
+  margin-right: -3px;
   cursor:pointer;
   position: relative;
 }
 
 /* Flèche sous le libellé sélectionné */
-input[type="radio"]:checked + label::after, input[type="radio"]:hover + label::after{
+input[type="radio"]:checked + label::after{
 	content:'';
 	position: absolute;
 	top:100%;
@@ -322,7 +273,7 @@ input[type="radio"]:checked + label::after, input[type="radio"]:hover + label::a
 }
 
 /* Bordure sous le libellé actif*/
-input[type="radio"]:checked + label, input[type="radio"]:hover + label{
+input[type="radio"]:checked + label{
 	background: #5CADD3;
 	border-bottom: 3px solid #498CAB;
 }
@@ -361,17 +312,12 @@ input[type="radio"]:checked + label, input[type="radio"]:hover + label{
     bottom: 0;
     width: 100%;
     height: 30%;
-    background: rgb(0,0,0,0.3);
+    background: rgba(0,0,0,0.3);
 	color: white;
 	text-align: left;
 	cursor: pointer;
-	visibility: hidden;
 	margin-bottom: 4px;
 	font-size: 100%;
-}
-
-.caption:hover, .grid-item-img:hover .caption{
-	visibility: visible;
 }
 
 .grid-item-text h3, .caption h3{
@@ -392,33 +338,6 @@ input[type="radio"]:checked + label, input[type="radio"]:hover + label{
 	position: absolute;
 	top: -1rem;
 	right: 1rem;
-}
-
-@media (min-width: 576px){
-	.grille-item{
-		max-width: calc(100%/2);
-	}
-	.caption{
-		font-size: 75%;
-	}
-}
-
-@media (min-width: 768px){
-	.grille-item{
-		max-width: calc(100%/4);
-	}
-	.caption{
-		font-size: 65%;
-	}
-	.portfolio_selector label {
-		padding:0.5%;
-	}
-}
-
-@media (min-width: 1024px){
-	.caption{
-		font-size: 100%;
-	}
 }
 
 /* Section Contact */
@@ -501,20 +420,6 @@ input[type=text], textarea{
     border-bottom: 2px solid #498CAB;
 }
 
-@media (min-width: 768px){
-	.map_container .overlay, .map{
-		display: inherit;
-	}
-	.map_container{
-		display: flex;
-	}
-	.form_container{
-		width: 15%;
-		position: absolute;
-		right: 10rem;
-	}
-}
-
 footer{
 	background: #F5F5F5;
 	text-align: center;
@@ -523,4 +428,119 @@ footer{
 footer p{
 	margin: 0;
 	padding: 10px;
+}
+
+/* Media querries */
+@media (min-width: 768px){
+	/* Nav querries*/
+	header{
+		flex-flow: row;
+	}
+	header figure, header nav{
+		margin-left: 0;
+		margin-right: 0;
+	}
+	header figure{
+		margin-top: auto;
+		margin-bottom: auto;
+	}
+	header nav{
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+	header nav li a {
+	    display: inline-block;
+	    padding-bottom: 2rem;
+	}
+	.active , nav a:hover{
+	border-top: 3px solid #5CADD3;
+	}
+
+	/* Slider Querries */
+	.slider{
+		padding-top: 83px;
+	}
+	.slider img, .slider figure{
+		display: inherit;
+		margin-bottom: 0; 
+	}
+	.slider_text{
+		position: absolute;
+		text-align: left;
+    	top: 40%;
+    	margin-left: 0px;
+    	padding-left: 6rem;
+		color: white;
+	}
+	.prev, .next, .slider .overlay{
+		display: inherit;
+	}
+
+	/* Service Querries */
+	.container{
+		flex-flow: row;
+	}
+	.col_sec{
+		width: 50%;
+	}
+	.separator{
+		width: 20%;
+	}
+
+	/* Portfolio Querries */
+	.grille-item{
+		max-width: calc(100%/2);
+	}
+	.caption{
+		font-size: 100%;
+	}
+
+	/* Contact Querries */
+
+	.map_container .overlay, .map{
+		display: inherit;
+	}
+	.map_container{
+		display: flex;
+	}
+	.form_container{
+		width: 300px;
+		position: absolute;
+		right: 10rem;
+	}
+}
+
+@media (min-width: 1024px){
+	.grille-item{
+		max-width: calc(100%/4);
+	}
+	body, .caption{
+		font-size: 100%;
+	}
+	.container{
+		max-width: 1150px;
+	}
+	.portfolio_selector label {
+		padding:1%;
+		margin-right: -4px;
+	}
+	input[type="radio"]:hover + label::after{
+		content:'';
+		position: absolute;
+		top:100%;
+		left:40%;
+		border-left: 8px solid transparent;
+		border-right: 8px solid transparent;
+		border-top: 8px solid #498CAB;
+	}
+	input[type="radio"]:hover + label{
+		background: #5CADD3;
+		border-bottom: 3px solid #498CAB;
+	}
+	.caption{
+		visibility: hidden;
+	}
+	.caption:hover, .grid-item-img:hover .caption{
+		visibility: visible;
+	}
 }
