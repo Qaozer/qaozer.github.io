@@ -59,7 +59,7 @@ a{
 /* Slider */
 
 .slider{
-	padding-top: 83px;
+	padding-top: 90px;
 	display: flex;
 	align-items: center;
 	position: relative;
@@ -77,7 +77,7 @@ a{
 }
 
 .slider figure, .slider img{
-	width:100%;
+	width: 100%;
 	height: auto;
 	margin-top: 0;
 }
@@ -266,7 +266,7 @@ input[type="radio"]:checked + label::after{
 	content:'';
 	position: absolute;
 	top:100%;
-	left:44%;
+	left:43%;
 	border-left: 8px solid transparent;
 	border-right: 8px solid transparent;
 	border-top: 8px solid #498CAB;
@@ -360,7 +360,7 @@ input[type="radio"]:checked + label{
 }
 
 .form_container{
-	background-color: rgb(255,255,255,0.7);
+	background-color: rgba(255,255,255,0.7);
 	padding: 1.6rem;
 	width: 70%;
 	margin-left: auto;
@@ -400,7 +400,7 @@ input[type=text], textarea{
 .map_container .overlay{
 	width: 100%;
 	height: 100%;	
-	background: rgb(0,170,255,0.3);
+	background: rgba(0,170,255,0.3);
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -430,7 +430,7 @@ footer p{
 	padding: 10px;
 }
 
-/* Media querries */
+/* Tablet Breakpoint */
 @media (min-width: 768px){
 	/* Nav querries*/
 	header{
@@ -510,15 +510,16 @@ footer p{
 	}
 }
 
+/* Laptop Breakpoint */ 
 @media (min-width: 1024px){
+	.slider{
+		padding-top: 90px;
+	}
 	.grille-item{
 		max-width: calc(100%/4);
 	}
 	body, .caption{
 		font-size: 100%;
-	}
-	.container{
-		max-width: 1150px;
 	}
 	.portfolio_selector label {
 		padding:1%;
@@ -528,7 +529,7 @@ footer p{
 		content:'';
 		position: absolute;
 		top:100%;
-		left:44%;
+		left:43%;
 		border-left: 8px solid transparent;
 		border-right: 8px solid transparent;
 		border-top: 8px solid #498CAB;
@@ -542,5 +543,11 @@ footer p{
 	}
 	.caption:hover, .grid-item-img:hover .caption{
 		visibility: visible;
+	}
+}
+
+@media (min-width: 1280px){
+	.container{
+		max-width: 1150px;
 	}
 }
