@@ -525,7 +525,7 @@ input[type=text], textarea{
 		border-right: 8px solid transparent;
 		border-top: 8px solid #498CAB;
 	}
-	input[type="radio"]:hover + label{
+	input[type="radio"]:hover + label:hover{
 		background: #5CADD3;
 		color: white;
 		border-bottom: 3px solid #498CAB;
