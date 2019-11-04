@@ -311,10 +311,10 @@ input[type="radio"] {
 }
 
 /* Flèche sous le libellé sélectionné */
-input[type="radio"]:checked + label::after/*, input[type="radio"]:hover + label::after*/{
+input[type="radio"]:checked + label::after, input[type="radio"]:hover + label::after{
 	content:'';
 	position: absolute;
-	top:105%;
+	top:100%;
 	left:40%;
 	border-left: 8px solid transparent;
 	border-right: 8px solid transparent;
