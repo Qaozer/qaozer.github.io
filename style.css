@@ -21,7 +21,7 @@ header{
     justify-content: space-around;
 }
 
-header figure{
+header figure, header nav{
 	margin: auto;
 	margin-top: 5px;
 }
@@ -30,8 +30,6 @@ header img {
 }
 
 header nav{
-	margin: auto;
-	margin-top: 5px;
 	margin-bottom: 5px;
 }
 
