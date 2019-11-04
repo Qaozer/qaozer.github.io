@@ -420,16 +420,6 @@ input[type=text], textarea{
     border-bottom: 2px solid #498CAB;
 }
 
-footer{
-	background: #F5F5F5;
-	text-align: center;
-}
-
-footer p{
-	margin: 0;
-	padding: 10px;
-}
-
 /* Tablet Breakpoint */
 @media (min-width: 768px){
 	/* Nav querries*/
