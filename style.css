@@ -76,7 +76,7 @@ a{
 
 .slider figure, .slider img{
 	width: 100%;
-	height: auto;
+	height: 100%;
 	margin-top: 0;
 }
 
@@ -451,7 +451,7 @@ input[type=text], textarea{
 	}
 	.slider img, .slider figure{
 		display: inherit;
-		margin-bottom: 0; 
+		margin-bottom: 0;
 	}
 	.slider_text{
 		position: absolute;
